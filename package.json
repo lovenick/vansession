@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "node ./build.js",
-    "serve": "browser-sync start --server 'public' --files 'public'"
+    "serve": "browser-sync start --server 'public' --files 'public'",
+    "deploy:dev": "node ./build.js && firebase deploy",
+    "deploy:prod": "node ./build.js && firebase deploy"
   },
   "dependencies": {
     "bulma": "^0.4.2",
