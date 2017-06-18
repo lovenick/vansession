@@ -29,9 +29,12 @@
 
     <div class="columns">
       <div class="column">
-          <h1>{{data.fields.title}}<h1>
-          
-          {{{ data.fields.body }}}
+        {{#each data.entries }}
+          <li>
+            <h2>{{fields.title}}</h2>
+            <p><a href="{{_fileName}}">Read more</a></p>
+          </li>
+        {{/each}}
       </div>
     </div>
 
