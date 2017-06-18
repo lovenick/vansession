@@ -2,6 +2,6 @@ language: node_js
 node_js:
   "6"
 before_script:
-  - npm install -g firebase-tools
+  - yarn global firebase-tools
 script:
   - yarn deploy:dev -- --token $FIREBASE_TOKEN
