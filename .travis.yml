@@ -4,4 +4,4 @@ node_js:
 before_script:
   - npm install -g firebase-tools
 script:
-  - yarn deploy:dev -- --token $FIREBASE_TOKEN
+  - CONTENTFUL_TOKEN=$CONTENTFUL_TOKEN CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID yarn deploy:dev -- --token $FIREBASE_TOKEN
