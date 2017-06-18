@@ -3,9 +3,10 @@ html, body {
 }
 
 body {
-  background-image: url('./../img/skyBg@2x.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('./../img/skyBg.jpg'), url('./../img/roadFooterBg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: top, bottom;
 }
 
 .container {
