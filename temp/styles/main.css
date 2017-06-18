@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('./../img/skyBg@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 205px;
+  height: 73px;
+}
