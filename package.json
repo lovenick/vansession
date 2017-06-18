@@ -4,6 +4,10 @@
   "main": "src/index.js",
   "author": "Nick Loveridge",
   "license": "MIT",
+  "scripts": {
+    "build": "node ./build.js",
+    "serve": "browser-sync start --server 'public' --files 'public'"
+  },
   "dependencies": {
     "bulma": "^0.4.2",
     "contentful-metalsmith": "^0.11.0",
