@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ title }}</title>
+  <title>{{data.fields.title}} - VanSession.com</title>
 
   <!-- FIXME: Package via NPM, not CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
@@ -15,26 +15,27 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="background">
+    <div class="container">
+      {{> header }}
 
-    <div class="column has-text-centered header">
-      <img src="/img/Logo@2x.png" alt="Vansession Logo" class="logo" />
-    </div>
-
-    <div class="columns">
-      <div class="column">
-        Menu Here
+      <div class="columns">
+        <div class="column is-8 is-offset-2 breadcrumbs">
+          Home > Posts > {{data.fields.title}}
+        </div>
       </div>
-    </div>
 
-    <div class="columns">
-      <div class="column content is-10 is-offset-1" >
+      <div class="columns main">
+        <div class="column content is-8 is-offset-2" >
           <h1 class="title">{{data.fields.title}}</h1>
           <div data-markdown>{{{ data.fields.body }}}</div>
+        </div>
       </div>
-    </div>
 
-  </div><!-- /.container -->
+      {{> footer }}
+
+    </div><!-- /.container -->
+  </div>
 
 </body>
 </html>

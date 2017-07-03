@@ -4,9 +4,10 @@ const markdown     = require('metalsmith-markdown');
 const dataMarkdown = require('metalsmith-data-markdown');
 const layouts      = require('metalsmith-layouts');
 const contentful   = require('contentful-metalsmith');
-const images       = require('metalsmith-project-images');
-// const debug = require('metalsmith-debug');
-// const templates  = require('metalsmith-templates');
+// const glob         = require('glob')
+// const images       = require('metalsmith-project-images');
+// const debug        = require('metalsmith-debug');
+// const templates    = require('metalsmith-templates');
 
 Metalsmith(__dirname)
   .destination('./public')
@@ -15,7 +16,8 @@ Metalsmith(__dirname)
     'space_id': process.env.CONTENTFUL_SPACE_ID
   }))
   .use(layouts({
-    engine: 'handlebars'
+    engine: 'handlebars',
+    partials: 'partials'
   }))
   .use(markdown())
   .use(dataMarkdown({

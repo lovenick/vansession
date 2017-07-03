@@ -1,23 +1,35 @@
 html, body {
   height: 100%;
+  font-family: Lato, sans-serif;
 }
 
-body {
-  background-image: url('./../img/skyBg.jpg'), url('./../img/roadFooterBg.jpg');
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: top, bottom;
+.background {
+  /*background-image: url('./../img/skyBg.jpg'), url('./../img/roadFooterBg.jpg');*/
+  height: 100%;
+  background-image: url('./../img/roadFooterBg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
 }
 
-.container {
-  max-width: 1024px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
 }
 
 .header {
-  margin-bottom: 30px;
+  margin: 20px 0px 40px 0px;
+}
+
+.footer {
+  background-color: inherit !important;
 }
 
 .logo {
   width: 205px;
   height: 73px;
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  color: #999;
 }
