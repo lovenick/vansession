@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ title }}</title>
-  
+
   <!-- FIXME: Package via NPM, not CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
   <link rel="stylesheet" href="/styles/main.css">
@@ -28,13 +28,13 @@
     </div>
 
     <div class="columns">
-      <div class="column">
+      <div class="column content is-10 is-offset-1" >
           <h1 class="title">{{data.fields.title}}</h1>
-          {{{ data.fields.body }}}
+          <div data-markdown>{{{ data.fields.body }}}</div>
       </div>
     </div>
 
   </div><!-- /.container -->
-  
+
 </body>
 </html>

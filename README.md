@@ -1,3 +1,5 @@
 # Vansession Static Site Generator
 
-More to come...
+### Dev references
+
+https://github.com/contentful-labs/contentful-metalsmith-example
